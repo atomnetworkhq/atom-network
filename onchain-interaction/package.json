@@ -1,0 +1,28 @@
+{
+  "name": "onchain-interactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx ts-node commonInteractions.ts",
+    "tests": "npx ts-node test.ts",
+    "server": "npx ts-node server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-bubblegum": "^3.1.2",
+    "@solana/spl-account-compression": "^0.2.0",
+    "@solana/web3.js": "^1.91.1",
+    "bs58": "^5.0.0",
+    "chai": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.1"
+  }
+}

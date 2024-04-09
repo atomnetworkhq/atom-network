@@ -1,0 +1,16 @@
+.splash-title{
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+}
+.splash-root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.progressBar{
+    width: 25%;
+}
