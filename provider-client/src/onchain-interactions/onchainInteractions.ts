@@ -3,11 +3,11 @@ import onchainData from './tree-data.json';
 import bs58 from 'bs58';
 export async function fetchConfig() {
     let id = onchainData.protonTree.treeID;
-    // const response = await fetch(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=ab4a6d80-e0ae-4d91-be41-f427f8ea332b`,{
+    // const response = await fetch(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=`,{
     //     method: 'GET',
     //     headers: {},
     // });
-    const response = await axios.get(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=ab4a6d80-e0ae-4d91-be41-f427f8ea332b`);
+    const response = await axios.get(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=`);
     let data = await response.data;
     console.log(data);
     const result = data.filter((item: { instructions: string | any[]; }) => item.instructions.length === 1)

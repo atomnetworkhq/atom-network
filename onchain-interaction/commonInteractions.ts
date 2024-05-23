@@ -128,7 +128,7 @@ export async function fetchConfig(type:string): Promise<string>{
         id = onchainData.protonTree.treeID;
     }
 
-    const response = await fetch(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=ab4a6d80-e0ae-4d91-be41-f427f8ea332b`,{
+    const response = await fetch(`https://api-devnet.helius.xyz/v0/addresses/${id}/transactions?api-key=`,{
         method: 'GET',
         headers: {},
     });
